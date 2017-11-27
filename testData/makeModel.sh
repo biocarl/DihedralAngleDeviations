@@ -5,7 +5,7 @@ reference_file=3BWM.pdb
 sample_file=mutant.fasta
 
 
-mutations=0
+mutations=120
 iterations=100
 
 COUNTER=0
@@ -44,7 +44,8 @@ rm *E2R2K7*
 rm modelar.log alinhar.log
 
 #analyse model
-python analize_mutations.py $reference_file  model.pdb >> deviations.csv
+python analize_mutations_ori.py $reference_file  model.pdb >> deviations_ori.csv
+python analize_mutations_mut.py $reference_file  model.pdb >> deviations_mut.csv
 
 
 #clean
