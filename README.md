@@ -25,7 +25,7 @@ Ramachandran plot where (angles of reference: blue| angles of template red)
 > show_mutations 
 
 
-###Possible workflow
+### Possible workflow
 
 **Extract sequence** 
 $ python extract_sequence.py 3BWM.pdb > 3BWM.fasta
