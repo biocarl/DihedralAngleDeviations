@@ -2,7 +2,7 @@
 
 Scripts for calculating/visualizing the change in dihedral angles of a sample relative to the template.
 
-###*Part1*: Quantitative Analysis: How differ dihedral angles of models modelled through homology modelling when applying random mutations?
+### *Part1*: Quantitative Analysis: How differ dihedral angles of models modelled through homology modelling when applying random mutations?
 
 **Usage:**
 *Analyse mutation effect quantitatively (plot,tables)*
@@ -10,24 +10,24 @@ Scripts for calculating/visualizing the change in dihedral angles of a sample re
 **$** pymol analize_mutations.py 3BWM.pdb 3BWM_mutant.pdb
 
 **Output:**
-Mean deviation, stdtdev
+Mean deviation, stdtdev,
 Ramachandran plot where (angles of reference: blue| angles of template red)
+![plot](https://github.com/biocarl/DihedralAngleDeviations/raw/master/testData/results_example/rest_rama.png)
 
 
-###*Part2*: Qualitative Analysis: See the different orientations of each mutated residue in the proposed model.
+### *Part2*: Qualitative Analysis: See the different orientations of each mutated residue in the proposed model.
 
 **Usage:**
 *Analyse mutation effect visually: Open in Pymol and show mutation effect*
 
-**$** pymol 3BWM.pdb 3BWM_mutant.pdb
-> run pymol_script.py
-> show_mutations
-
+**$** pymol 3BWM.pdb 3BWM_mutant.pdb 
+> run pymol_script.py 
+> show_mutations 
 
 
 ###Possible workflow
 
-**Extract sequence**
+**Extract sequence** 
 $ python extract_sequence.py 3BWM.pdb > 3BWM.fasta
 
 **Introduce mutation**
