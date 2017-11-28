@@ -1,9 +1,14 @@
 import sys
 from pymol import cmd,stored
 
+"""
+Carl Hauck,
+created 11.2017
+https://github.com/biocarl/DihedralAngleDeviations
+"""
+
 '''
 Offset = if there is a shift
-
 '''
 def show_mutations(offset=0):
 	obj_list = cmd.get_names('objects')

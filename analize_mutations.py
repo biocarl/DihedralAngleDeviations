@@ -1,9 +1,12 @@
 import sys,os,math
 import matplotlib.pyplot as plt
 import numpy as np
-
 from Bio.PDB import *
-
+"""
+Carl Hauck,
+created 11.2017
+https://github.com/biocarl/DihedralAngleDeviations
+"""
 def main():
     if len(sys.argv) <3:
         sys.exit()

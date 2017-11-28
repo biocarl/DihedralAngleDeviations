@@ -1,9 +1,15 @@
 #!/usr/bin/python
 from Bio import SeqIO
 import sys
+
+"""
+Carl Hauck,
+created 11.2017
+https://github.com/biocarl/DihedralAngleDeviations
+"""
+
 if len(sys.argv) <3:
         sys.exit()
-
 
 #Vars
 fasta_origin=sys.argv[1]

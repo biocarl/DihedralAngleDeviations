@@ -1,16 +1,17 @@
 #!/usr/bin/python
 from Bio import SeqIO
 from random import randint
-
 import sys
 
-
-
+"""
+Carl Hauck,
+created 11.2017
+https://github.com/biocarl/DihedralAngleDeviations
+"""
 '''
 Extracts seq from pdb file and introduces n mutations randomly
 
 '''
-
 if len(sys.argv) <3:
     print 'Wrong arguments'
     sys.exit()

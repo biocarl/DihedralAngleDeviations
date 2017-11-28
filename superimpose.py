@@ -1,6 +1,11 @@
 import sys,os
 from Bio.PDB import *
 
+"""
+Carl Hauck,
+created 11.2017
+https://github.com/biocarl/DihedralAngleDeviations
+"""
 
 if len(sys.argv) <3:
             sys.exit()
